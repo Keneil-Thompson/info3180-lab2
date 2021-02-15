@@ -1,0 +1,32 @@
+{% extends "base.html" %}>
+{% block main %}
+    <div class="card">
+        <div class="upper">
+            <img src="{{url_for('static',filename='man.png')}}" alt="profile">
+            <div class="upper-text">
+                <h1>Keneil Thompson</h1>
+                <p>@kthompson</p>
+                <p>Kingston, Jamaica</p>
+                <p>{{ ddate }}</p>
+            </div>
+        </div>           
+        <div class="mid">
+            <p>
+                I am smart and talented young man who loves website design and development.
+                Contact me if you'd like to work together on a new project.
+            </p>
+        </div>
+        <div class="lower">
+            <p class="one">7</p>
+            <p class ="two">100</p>
+            <p class ="three">250</p>
+            <p class="four">Posts</p>
+            <p class="five">Following</p>
+            <p class="six">Followers</p>
+            <div class="follow">
+                <button>Follow</button>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
